@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>紙鴿 隱私權政策</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
+                   "Helvetica Neue", Arial, sans-serif;
+      background: #0d0d0f;
+      color: #e2e2e7;
+      line-height: 1.75;
+      padding: 48px 24px 80px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .icon {
+      width: 64px;
+      height: 64px;
+      background: radial-gradient(circle at 40% 40%, #1e40af, #1d4ed8);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #636370;
+      margin-top: 2px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: #48484f;
+      margin-bottom: 36px;
+    }
+
+    .summary-box {
+      background: #1a1a20;
+      border: 1px solid #2a2a35;
+      border-left: 3px solid #3b82f6;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: #a0a0b0;
+    }
+
+    .summary-box strong {
+      color: #e2e2e7;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #1e1e28;
+    }
+
+    p {
+      font-size: 15px;
+      color: #8e8e9a;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: #8e8e9a;
+      padding: 6px 0 6px 22px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 6px;
+      color: #3b82f6;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    .highlight {
+      color: #e2e2e7;
+      font-weight: 500;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .badge {
+      background: #1a1a20;
+      border: 1px solid #2a2a35;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 13px;
+      color: #a0a0b0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #22c55e;
+      flex-shrink: 0;
+    }
+
+    .badge .dot.blue { background: #3b82f6; }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #1e1e28;
+      font-size: 13px;
+      color: #48484f;
+    }
+
+    a { color: #3b82f6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="icon">🕊️</div>
+    <div>
+      <h1>紙鴿 隱私權政策</h1>
+      <div class="subtitle">Paper Pigeon — Privacy Policy</div>
+    </div>
+  </div>
+
+  <p class="updated">最後更新：2026 年 3 月 21 日</p>
+
+  <div class="summary-box">
+    <strong>簡單說：</strong>紙鴿不收集、不上傳、不儲存任何個人資料至伺服器。
+    所有通訊均透過藍牙在裝置之間直接傳輸，離開裝置後即消失。
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <h2>1. 我們收集什麼資料</h2>
+    <p>紙鴿<span class="highlight">不建立帳號、不要求登入、不收集任何識別資訊</span>。</p>
+    <p>App 唯一使用的資訊是你在設定中輸入的<span class="highlight">顯示名稱</span>，此名稱：</p>
+    <ul>
+      <li>僅存在你的裝置本機（UserDefaults）</li>
+      <li>透過藍牙廣播給附近同樣開啟紙鴿的裝置</li>
+      <li>不會傳送至任何伺服器或第三方</li>
+    </ul>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <h2>2. 藍牙的使用方式</h2>
+    <p>紙鴿使用 <span class="highlight">Core Bluetooth</span> 進行裝置間的直接通訊：</p>
+    <ul>
+      <li><strong>廣播（Peripheral）：</strong>向附近裝置廣播你的顯示名稱，使對方能找到你</li>
+      <li><strong>掃描（Central）：</strong>偵測附近同樣開啟紙鴿的裝置</li>
+      <li><strong>傳訊：</strong>聊天訊息與紙條透過藍牙點對點傳輸，不經過任何中繼伺服器</li>
+    </ul>
+    <p>藍牙廣播僅在你明確同意後才會啟動（App 首次開啟時會顯示說明並要求確認）。</p>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <h2>3. 資料儲存與保留</h2>
+    <ul>
+      <li>聊天記錄僅儲存於<span class="highlight">你的裝置本機</span>，可在設定中設定保留天數或手動清除</li>
+      <li>紙條記錄同樣僅存於本機，可隨時刪除</li>
+      <li>刪除 App 即永久刪除所有本機資料</li>
+      <li><span class="highlight">我們沒有伺服器，也無法存取你的任何資料</span></li>
+    </ul>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <h2>4. 我們不做的事</h2>
+    <div class="badge-row">
+      <div class="badge"><span class="dot"></span>不建立帳號</div>
+      <div class="badge"><span class="dot"></span>不上傳資料至伺服器</div>
+      <div class="badge"><span class="dot"></span>不追蹤位置</div>
+      <div class="badge"><span class="dot"></span>不嵌入廣告 SDK</div>
+      <div class="badge"><span class="dot"></span>不分析使用行為</div>
+      <div class="badge"><span class="dot"></span>不與第三方共享資料</div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <h2>5. 兒童隱私</h2>
+    <p>紙鴿不針對 13 歲以下兒童設計，且不主動收集任何兒童個人資訊。</p>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <h2>6. 本政策的變更</h2>
+    <p>若我們對隱私權政策進行重大變更，將更新本頁面頂端的「最後更新」日期。建議你定期查閱。</p>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <h2>7. 聯絡我們</h2>
+    <p>如有任何隱私相關問題，歡迎透過 App Store 的開發者聯絡頁面與我們聯繫。</p>
+  </section>
+
+  <footer>
+    © 2026 紙鴿 Paper Pigeon &nbsp;·&nbsp; 本政策以繁體中文為準
+  </footer>
+
+</div>
+</body>
+</html>
