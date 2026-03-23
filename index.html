@@ -87,7 +87,7 @@
 
   <h1>Privacy Policy / 隱私權政策</h1>
   <p class="app-name">紙鴿 Paper Pigeon — Bluetooth Offline Chat</p>
-  <p class="updated">Last updated / 最後更新：March 24, 2026</p>
+  <p class="updated">Last updated / 最後更新：March 24, 2026 (v2)</p>
 
   <div class="bilingual">
     <p class="zh">本政策說明 <strong>紙鴿 Paper Pigeon</strong>（以下簡稱「本 App」）如何處理您的資訊。我們承諾保護您的隱私。</p>
@@ -97,13 +97,23 @@
   <!-- 1 -->
   <h2>1. Data We Collect / 我們收集的資料</h2>
   <div class="bilingual">
-    <p class="zh">本 App <strong>不建立帳號、不要求登入、不收集任何可識別個人身分的資訊</strong>。App 唯一使用的資訊是您在設定中輸入的<strong>顯示名稱</strong>，此名稱：</p>
-    <p class="en">The App <strong>does not create accounts, does not require login, and does not collect any personally identifiable information</strong>. The only information the App uses is the <strong>display name</strong> you enter in Settings, which:</p>
+    <p class="zh">本 App <strong>不建立帳號、不要求登入</strong>。所有資料均不與任何持久身分（帳號、電子郵件等）連結。App 使用以下資訊：</p>
+    <p class="en">The App <strong>does not create accounts, does not require login</strong>. No data is linked to any persistent identity (account, email, etc.). The App uses the following information:</p>
   </div>
+
+  <p class="zh" style="font-weight:600;margin-bottom:4px">顯示名稱 / Display Name</p>
   <ul>
-    <li class="zh">僅儲存於您的裝置本機（UserDefaults）<span style="color:#6e6e73;font-size:0.9rem"> / Is stored only on your device (UserDefaults)</span></li>
-    <li class="zh">透過藍牙廣播給附近同樣開啟本 App 的裝置 <span style="color:#6e6e73;font-size:0.9rem"> / Is broadcast via Bluetooth to nearby devices also running the App</span></li>
-    <li class="zh">不會傳送至任何伺服器或第三方 <span style="color:#6e6e73;font-size:0.9rem"> / Is never sent to any server or third party</span></li>
+    <li class="zh">您在設定中輸入的暱稱，僅儲存於裝置本機（UserDefaults）<span style="color:#6e6e73;font-size:0.9rem"> / Your nickname entered in Settings, stored only on-device (UserDefaults)</span></li>
+    <li class="zh">透過藍牙廣播給附近同樣開啟本 App 的裝置，讓對方知道你的名稱 <span style="color:#6e6e73;font-size:0.9rem"> / Broadcast via Bluetooth to nearby devices running the App so others can see your name</span></li>
+    <li class="zh">不會傳送至任何伺服器或第三方 <span style="color:#6e6e73;font-size:0.9rem"> / Never sent to any server or third party</span></li>
+  </ul>
+
+  <p class="zh" style="font-weight:600;margin-bottom:4px;margin-top:16px">裝置識別碼（Vendor Identifier）/ Device Identifier (IDFV)</p>
+  <ul>
+    <li class="zh">本 App 使用 Apple 提供的 <code>identifierForVendor</code>（IDFV）作為裝置在 BLE 通訊中的匿名識別碼 <span style="color:#6e6e73;font-size:0.9rem"> / The App uses Apple's <code>identifierForVendor</code> (IDFV) as an anonymous device identifier for BLE communication</span></li>
+    <li class="zh">此識別碼會透過藍牙傳給附近的裝置，用於訊息路由與配對 <span style="color:#6e6e73;font-size:0.9rem"> / This identifier is shared with nearby devices via Bluetooth for message routing and pairing</span></li>
+    <li class="zh">不會傳送至任何伺服器，不與帳號或個人身分連結，不用於追蹤 <span style="color:#6e6e73;font-size:0.9rem"> / Never sent to any server; not linked to any account or personal identity; not used for tracking</span></li>
+    <li class="zh">解除安裝本 App 後，此識別碼即重置 <span style="color:#6e6e73;font-size:0.9rem"> / Resets when the App is uninstalled</span></li>
   </ul>
 
   <!-- 2 -->
